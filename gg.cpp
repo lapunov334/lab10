@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-main (){
+main ()
+{
 int i,j;
 float b[3][4];
 for(i=0; i<3; i++)
