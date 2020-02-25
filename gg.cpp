@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-main ()
-{
+main (){
 int i,j;
 float b[3][4];
 for(i=0; i<3; i++)
@@ -98,7 +97,11 @@ for(i=0; i<3; i++)
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
-        {
+        {	
+        	if(i==1 && j==0 || i==2 && j==0 || i==2 && j==1)
+        	{
+        		b[i][j]=abs(b[i][j]);
+			}
             printf("%.2f ",b[i][j]);
         }
     	printf("\n");
@@ -107,12 +110,12 @@ for(i=0; i<3; i++)
 	printf("\n");
 	float x1,x2,x3;
 	x3=b[2][3];
-	x2=b[1][2]*x3-b[1][3];
-	x1=b[0][3]+b[0][1]*x2-b[0][2]*x3;
+	x2=b[1][3]-b[1][2]*x3;
+	x1=b[0][3]-b[0][1]*x2-b[0][2]*x3;
 	printf("Resualt x1: %f\n",x1);
-	printf("Resualt x2: %f\n",x2*(-1));
+	printf("Resualt x2: %f\n",x2);//Âîò òóò êîñòûëü 
 	printf("Resualt x3: %f\n",x3);
-	
+
 		
  return 0;
 }
