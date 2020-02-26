@@ -17,7 +17,7 @@ for(i=0; i<3; i++)
         }
     	printf("\n");
 	}
-	float daun;
+	float dn;
 	dn=b[0][0]; 
 	for(i=0; i<3; i++)
 	{
@@ -30,7 +30,7 @@ for(i=0; i<3; i++)
         }
 	}
 	float dn1,tm;
-	daun1=b[1][0];
+	dn1=b[1][0];
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
@@ -43,7 +43,7 @@ for(i=0; i<3; i++)
         }
 	}
 	float dn2;
-	daun2=b[2][0];
+	dn2=b[2][0];
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
@@ -56,7 +56,7 @@ for(i=0; i<3; i++)
         }
 	}
 	float dn3;
-	daun3=b[1][1];
+	dn3=b[1][1];
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
@@ -68,7 +68,7 @@ for(i=0; i<3; i++)
         }
 	}
 	float dn4;
-	daun4=b[2][1];
+	dn4=b[2][1];
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
@@ -81,7 +81,7 @@ for(i=0; i<3; i++)
         }
 	}
 	float dn5;
-	daun5=b[2][2];
+	dn5=b[2][2];
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
