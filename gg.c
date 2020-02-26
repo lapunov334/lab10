@@ -113,7 +113,7 @@ for(i=0; i<3; i++)
 	x2 = b[1][3]-b[1][2]*x3; 
 	x1 = b[0][3]-b[0][1]*x2-b[0][2]*x3; 
 	printf("Resualt x1: %f\n",x1);
-	printf("Resualt x2: %f\n",x2);//Âîò òóò êîñòûëü 
+	printf("Resualt x2: %f\n",x2);
 	printf("Resualt x3: %f\n",x3);
 
 		
