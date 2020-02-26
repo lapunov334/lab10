@@ -18,18 +18,18 @@ for(i=0; i<3; i++)
     	printf("\n");
 	}
 	float daun;
-	daun=b[0][0]; 
+	dn=b[0][0]; 
 	for(i=0; i<3; i++)
 	{
     	for(j=0; j<4; j++)
         {
             if(i==0)
             {
-            	b[i][j]= b[i][j]/daun;
+            	b[i][j]= b[i][j]/dn;
 			}
         }
 	}
-	float daun1,tm;
+	float dn1,tm;
 	daun1=b[1][0];
 	for(i=0; i<3; i++)
 	{
@@ -38,11 +38,11 @@ for(i=0; i<3; i++)
         	   tm=b[0][j];
         	   if(i==1)
         	   {
-        			b[i][j]=tm*(-daun1)+b[i][j];
+        			b[i][j]=tm*(-dn1)+b[i][j];
 			   }
         }
 	}
-	float daun2;
+	float dn2;
 	daun2=b[2][0];
 	for(i=0; i<3; i++)
 	{
@@ -51,11 +51,11 @@ for(i=0; i<3; i++)
         	   tm=b[0][j];
         	   if(i==2)
         	   {
-        			b[i][j]=tm*(-daun2)+b[i][j];
+        			b[i][j]=tm*(-dn2)+b[i][j];
 			   }
         }
 	}
-	float daun3;
+	float dn3;
 	daun3=b[1][1];
 	for(i=0; i<3; i++)
 	{
@@ -63,11 +63,11 @@ for(i=0; i<3; i++)
         {
         	   if(i==1)
         	   {
-        			b[i][j]/=daun3;
+        			b[i][j]/=dn3;
 			   }
         }
 	}
-	float daun4;
+	float dn4;
 	daun4=b[2][1];
 	for(i=0; i<3; i++)
 	{
@@ -76,11 +76,11 @@ for(i=0; i<3; i++)
         	   tm=b[1][j];
         	   if(i==2)
         	   {
-        			b[i][j]=tm*(-daun4)+b[i][j];
+        			b[i][j]=tm*(-dn4)+b[i][j];
 			   }
         }
 	}
-	float daun5;
+	float dn5;
 	daun5=b[2][2];
 	for(i=0; i<3; i++)
 	{
@@ -88,7 +88,7 @@ for(i=0; i<3; i++)
         {
         	   if(i==2)
         	   {
-        			b[i][j]/=daun5;
+        			b[i][j]/=dn5;
 			   }
         }
 	}
@@ -109,9 +109,9 @@ for(i=0; i<3; i++)
 	
 	printf("\n");
 	float x1,x2,x3;
-	x3=b[2][3];
-	x2=b[1][3]-b[1][2]*x3;
-	x1=b[0][3]-b[0][1]*x2-b[0][2]*x3;
+	x3 = b[2][3];
+	x2 = b[1][3]-b[1][2]*x3; 
+	x1 = b[0][3]-b[0][1]*x2-b[0][2]*x3; 
 	printf("Resualt x1: %f\n",x1);
 	printf("Resualt x2: %f\n",x2);//Âîò òóò êîñòûëü 
 	printf("Resualt x3: %f\n",x3);
